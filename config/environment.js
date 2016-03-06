@@ -43,5 +43,14 @@ module.exports = function(environment) {
 
   }
 
+  ENV['torii'] = {
+    providers: {
+      'facebook-oauth2': {
+        apiKey: '606436446164500',
+        redirectUri: 'http://localhost:4200/login'
+      }
+    }
+  };
+
   return ENV;
 };
